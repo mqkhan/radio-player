@@ -27,9 +27,9 @@ export default function Home() {
   });
 
   return (
-    <>
-      <div className="container">
-        <div className="list">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="container flex flex-wrap text-2xl items-center justify-center bg-slate-300 rounded-md md:w-2/4 h-1/4">
+        <div className="list flex flex-col flex-wrap">
           <h1>List of Sverige Radio Channels</h1>
           <Search search={search} setSearch={setSearch} />
           <List filterdList={filterdList} />
@@ -37,6 +37,6 @@ export default function Home() {
           <ActualList channels={channels} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
